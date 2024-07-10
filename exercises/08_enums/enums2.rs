@@ -1,7 +1,10 @@
 #[allow(dead_code)]
 #[derive(Debug)]
 enum Message {
-    // TODO: Define the different variants used below.
+    Move { x: u8, y: u8 },
+    Echo(String),
+    ChangeColor(u8, u8, u8),
+    Quit,
 }
 
 impl Message {
